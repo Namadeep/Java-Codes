@@ -1,0 +1,12 @@
+public class Main {
+    public static void main(String[] args) {
+        String str = "radar";
+        boolean isPalindrome = checkPalindrome(str);
+        System.out.println("Is '" + str + "' a palindrome? " + isPalindrome); // Output: Is 'radar' a palindrome? true
+    }
+
+    public static boolean checkPalindrome(String str) {
+        String reversed = new StringBuilder(str).reverse().toString();
+        return str.equals(reversed);
+    }
+}
