@@ -1,0 +1,29 @@
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {5, 2, 8, 1, 9};
+        int largest = findLargest(arr);
+        int smallest = findSmallest(arr);
+        System.out.println("Largest element: " + largest); // Output: Largest element: 9
+        System.out.println("Smallest element: " + smallest); // Output: Smallest element: 1
+    }
+
+    public static int findLargest(int[] arr) {
+        int largest = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > largest) {
+                largest = arr[i];
+            }
+        }
+        return largest;
+    }
+
+    public static int findSmallest(int[] arr) {
+        int smallest = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < smallest) {
+                smallest = arr[i];
+            }
+        }
+        return smallest;
+    }
+}
