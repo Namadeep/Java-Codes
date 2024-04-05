@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+        int num = 5;
+        int factorial = calculateFactorial(num);
+        System.out.println("Factorial of " + num + " is " + factorial); // Output: Factorial of 5 is 120
+    }
+
+    public static int calculateFactorial(int num) {
+        if (num == 0) {
+            return 1;
+        }
+        return num * calculateFactorial(num - 1);
+    }
+}
